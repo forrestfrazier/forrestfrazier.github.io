@@ -1,85 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Image Generator</title>
-		<style>
-			* {
-				margin: 0%;
-				padding: 0%;
-				box-sizing: border-box;
 
-				font-family: Arial, Helvetica, sans-serif;
-			}
+<html>
 
-			body {
-				background: rgba(120, 16, 180, 0.767);
-				height: 100%;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
+<body></body>
 
-			.container {
-				margin: 1.5vh 20vw;
-				margin-top: 10vh;
-				text-align: center;
-				background: rgb(39, 188, 209);
-				background: linear-gradient(
-					118deg,
-					rgba(39, 188, 209, 0.9783263647255778) 0%,
-					rgba(6, 14, 101, 1) 100%
-				);
-				opacity: 0.9;
-				color: white;
-				padding: 10px 10vw;
-				border-radius: 20px;
-				min-height: 15vh;
-			}
-
-			h1 {
-				text-transform: uppercase;
-			}
-
-			section {
-				height: 50vh;
-				width: 100%;
-				margin-top: -50px;
-				background-position: center;
-				background-repeat: no-repeat;
-			}
-		</style>
-	</head>
-
-	<body>
-			<section></section>
-		<script>
-					const pics = [
-						'url(
-			"https://media.geeksforgeeks.org/wp-content/uploads/20200316135008/red7.png")',
-						'url(
-			"https://media.geeksforgeeks.org/wp-content/uploads/20200316135014/yellow3.png")',
-						'url(
-			"https://media.geeksforgeeks.org/img-practice/MaskGroup58@2x-min-1637846347.png")',
-						'url(
-			"https://media.geeksforgeeks.org/img-practice/banner/dsa-self-paced-course-overview-image.png")',
-						'url(
-			"https://media.geeksforgeeks.org/img-practice/banner/complete-interview-preparation-thumbnail.png")',
-						'url(
-			"https://media.geeksforgeeks.org/img-practice/banner/Amazon-Test-Series-thumbnail.png")',
-						'url(
-			"https://media.geeksforgeeks.org/img-practice/banner/dsa-self-paced-thumbnail.png")'
-					];
-					const pic = document.querySelector('section');
-
-					function showImage() {
-						var a = Math.floor(Math.random() * pics.length);
-						var img = pics[a];
-						pic.style.backgroundImage = img;
-					}
-
-					setInterval(showImage, 1000);
-		</script>
-	</body>
 </html>
+<script>
+items = [
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102715987435600/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102760266707035/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102785021489273/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102824015921313/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102859201941564/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102902990483496/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102932979765388/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017102981189079160/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103029570392174/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103317148643348/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103344269013012/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103380935618600/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103463924117624/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103483964493824/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103513593053184/unknown.png',
+    'https://cdn.discordapp.com/attachments/1017102640628379738/1017103592882176020/unknown.png',
+]
+var item = items[Math.floor(Math.random() * items.length)];
+console.log('item: ', item);
+document.body.style = `background-image: url(${item}) !important ;background-position
+: center !important;background-repeat: no-repeat !important;   background-size: 1920px 1080px`
+</script>

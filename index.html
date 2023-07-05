@@ -5,11 +5,34 @@
 
 </html>
 <script>
-items = [
-   '/images/IMG_1087.jpeg', '/images/IMG_1144.jpeg', '/images/IMG_1151.jpeg', '/images/IMG_1160.jpeg', '/images/IMG_1163.jpeg', '/images/IMG_1209.jpeg', '/images/IMG_1215.jpeg', '/images/IMG_1245.jpeg', '/images/IMG_1263.jpeg', '/images/IMG_1265.jpeg',
-]
+   function loadImagesFromFolder() {
+      var folderPath = "/images"; // Replace with the path to your folder
+
+      var fileInput = document.createElement("input");
+      fileInput.type = "file";
+      fileInput.setAttribute("webkitdirectory", true);
+      fileInput.setAttribute("directory", true);
+
+      fileInput.onchange = function (e) {
+        var files = e.target.files;
+        var items = [];
+
+        for (var i = 0; i < files.length; i++) {
+          if (files[i].type.match("image.*")) {
+            items.push(files[i]);
+          }
+        }
+
+        // Process the imageFiles array as needed
+        console.log(items);
+      };
+   }
+// items = [
+//    '/images/IMG_1087.jpeg', '/images/IMG_1144.jpeg', '/images/IMG_1151.jpeg', '/images/IMG_1160.jpeg', '/images/IMG_1163.jpeg', '/images/IMG_1209.jpeg', '/images/IMG_1215.jpeg', '/images/IMG_1245.jpeg', '/images/IMG_1263.jpeg', '/images/IMG_1265.jpeg',
+// ]
 var item = items[Math.floor(Math.random() * items.length)];
 console.log('item: ', item);
 document.body.style = `background-image: url(${item}) !important ;background-position
 : center !important;background-repeat: no-repeat !important;   background-size: 1920px 1080px`
 </script>
+

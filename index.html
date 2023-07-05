@@ -5,33 +5,33 @@
 
 </html>
 <script>
-   // function loadImagesFromFolder() {
-      var folderPath = "/images"; // Replace with the path to your folder
+   // function load', 'ImagesFromFolder() {
+      // var folderPath = "/', 'images"; // Replace with the path to your folder
 
-      var fileInput = document.createElement("input");
-      fileInput.type = "file";
-      fileInput.setAttribute("webkitdirectory", true);
-      fileInput.setAttribute("directory", true);
+      // var fileInput = document.createElement("input");
+      // fileInput.type = "file";
+      // fileInput.setAttribute("webkitdirectory", true);
+      // fileInput.setAttribute("directory", true);
 
-      fileInput.onchange = function (e) {
-        var files = e.target.files;
-        var items = [];
+      // fileInput.onchange = function (e) {
+      //   var files = e.target.files;
+      //   var items = [];
 
-        for (var i = 0; i < files.length; i++) {
-          if (files[i].type.match("image.*")) {
-            items.push(files[i]);
-          }
-        }
+      //   for (var i = 0; i < files.length; i++) {
+      //     if (files[i].type.match("image.*")) {
+      //       items.push(files[i]);
+      //     }
+      //   }
 
-        // Process the imageFiles array as needed
-        console.log(items);
-      };
+      //   // Process the imageFiles array as needed
+      //   console.log(items);
+      // };
    // }
-// items = [
-//    '/images/IMG_1087.jpeg', '/images/IMG_1144.jpeg', '/images/IMG_1151.jpeg', '/images/IMG_1160.jpeg', '/images/IMG_1163.jpeg', '/images/IMG_1209.jpeg', '/images/IMG_1215.jpeg', '/images/IMG_1245.jpeg', '/images/IMG_1263.jpeg', '/images/IMG_1265.jpeg',
-// ]
+items = [
+'images/IMG_0529.jpg', 'images/IMG_1001.jpeg', 'images/IMG_1087.jpeg', 'images/IMG_1128.jpg', 'images/IMG_1131.jpg', 'images/IMG_1144.jpeg', 'images/IMG_1151.jpeg', 'images/IMG_1160.jpeg', 'images/IMG_1163.jpeg', 'images/IMG_1174.jpg', 'images/IMG_1176.jpg', 'images/IMG_1186.jpg', 'images/IMG_1209.jpeg', 'images/IMG_1215.jpeg', 'images/IMG_1237.jpg', 'images/IMG_1245.jpeg', 'images/IMG_1251.jpg', 'images/IMG_1255.jpg', 'images/IMG_1263.jpeg', 'images/IMG_1265.jpeg', 'images/IMG_1276.jpg', 'images/IMG_1318.jpg', 'images/IMG_1321.jpg', 'images/IMG_1324.jpg', 'images/IMG_1325.jpeg', 'images/IMG_1327.jpg', 'images/IMG_1328.jpg ', 'images/IMG_1330.jpg', 'images/IMG_1334.jpg', 'images/IMG_1343.jpg', 'images/IMG_1345.jpg', 'images/IMG_1347.jpg', 'images/IMG_1353.jpg', 'images/IMG_1356.jpeg', 'images/IMG_1358.jpg', 'images/IMG_1414.jpg', 'images/IMG_1425.jpg', 'images/IMG_1433.jpg']
+
 var item = items[Math.floor(Math.random() * items.length)];
-console.log('item: ', item);
+
 document.body.style = `background-image: url(${item}) !important ;background-position
 : center !important;background-repeat: no-repeat !important;   background-size: 1920px 1080px`
 </script>
